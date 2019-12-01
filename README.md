@@ -15,7 +15,7 @@ UIApplicationMain(
     NSStringFromClass(AppDelegate.self))
 ```
 
-2. Your app must has an Application Delegate class (our case AppDelegate) conforming UIApplicationDelegate protocol. A valid UISceneConfiguration object must be retured from the lifecycle function: __application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration__. You have to set delegateClass property with your Scene Delegate class (SceneDelegate) conforming UIWindowSceneDelegate protocol.
+2. Your app must has an Application Delegate class (our case AppDelegate) conforming UIApplicationDelegate protocol. A valid UISceneConfiguration object must be retured from the lifecycle function: _application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration_ . You have to set delegateClass property with your Scene Delegate class (SceneDelegate) conforming UIWindowSceneDelegate protocol.
 
 ```swift
 func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -28,7 +28,7 @@ func application(_ application: UIApplication, configurationForConnecting connec
 }
 ```
 
-3. Create a UIWindow object and set it to SceneDelegate's window property in __scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)__function. Set the rootViewController property of the window object with an object a UIViewController object.
+3. Create a UIWindow object and set it to SceneDelegate's window property in _scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)_ function. Set the rootViewController property of the window object with an object a UIViewController object.
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
